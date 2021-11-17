@@ -1,14 +1,22 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@sveltejs/adapter-cloudflare-workers': ^1.0.0-next.25
   '@sveltejs/kit': next
   svelte: ^3.42.6
+
+dependencies:
+  '@sveltejs/adapter-cloudflare-workers': 1.0.0-next.25
 
 devDependencies:
   '@sveltejs/kit': 1.0.0-next.196_svelte@3.44.1
   svelte: 3.44.1
 
 packages:
+
+  /@iarna/toml/2.2.5:
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: false
 
   /@rollup/pluginutils/4.1.1:
     resolution: {integrity: sha512-clDjivHqWGXi7u+0d2r2sBi4Ie6VLEAzWMIkvJLnDmxoOhBYOTfzGbOQBA32THHm11/LiJbd01tJUpJsbshSWQ==}
@@ -17,6 +25,13 @@ packages:
       estree-walker: 2.0.2
       picomatch: 2.3.0
     dev: true
+
+  /@sveltejs/adapter-cloudflare-workers/1.0.0-next.25:
+    resolution: {integrity: sha512-ziQ/WC9F5okX3f90nlD6Mp5HMj26Kn0h/Mkmi/vhBLwrEF6v5u3GGbdSoIyAHaWUQ0vN9fz9pT/es1/MH8v7eA==}
+    dependencies:
+      '@iarna/toml': 2.2.5
+      esbuild: 0.13.14
+    dev: false
 
   /@sveltejs/kit/1.0.0-next.196_svelte@3.44.1:
     resolution: {integrity: sha512-z7sA/2/3Il5biibjPXCYXJC11TyFhgCvMaJvvbtMnu2l3EmOmJBMS+r2djGptzfFsugSVNwGQFn8+ldWQWq3jA==}
@@ -83,7 +98,6 @@ packages:
     cpu: [arm64]
     os: [android]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-darwin-64/0.13.14:
@@ -91,7 +105,6 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-darwin-arm64/0.13.14:
@@ -99,7 +112,6 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-freebsd-64/0.13.14:
@@ -107,7 +119,6 @@ packages:
     cpu: [x64]
     os: [freebsd]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-freebsd-arm64/0.13.14:
@@ -115,7 +126,6 @@ packages:
     cpu: [arm64]
     os: [freebsd]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-linux-32/0.13.14:
@@ -123,7 +133,6 @@ packages:
     cpu: [ia32]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-linux-64/0.13.14:
@@ -131,7 +140,6 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-linux-arm/0.13.14:
@@ -139,7 +147,6 @@ packages:
     cpu: [arm]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-linux-arm64/0.13.14:
@@ -147,7 +154,6 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-linux-mips64le/0.13.14:
@@ -155,7 +161,6 @@ packages:
     cpu: [mips64el]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-linux-ppc64le/0.13.14:
@@ -163,7 +168,6 @@ packages:
     cpu: [ppc64]
     os: [linux]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-netbsd-64/0.13.14:
@@ -171,7 +175,6 @@ packages:
     cpu: [x64]
     os: [netbsd]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-openbsd-64/0.13.14:
@@ -179,7 +182,6 @@ packages:
     cpu: [x64]
     os: [openbsd]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-sunos-64/0.13.14:
@@ -187,7 +189,6 @@ packages:
     cpu: [x64]
     os: [sunos]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-windows-32/0.13.14:
@@ -195,7 +196,6 @@ packages:
     cpu: [ia32]
     os: [win32]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-windows-64/0.13.14:
@@ -203,7 +203,6 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild-windows-arm64/0.13.14:
@@ -211,7 +210,6 @@ packages:
     cpu: [arm64]
     os: [win32]
     requiresBuild: true
-    dev: true
     optional: true
 
   /esbuild/0.13.14:
@@ -236,7 +234,6 @@ packages:
       esbuild-windows-32: 0.13.14
       esbuild-windows-64: 0.13.14
       esbuild-windows-arm64: 0.13.14
-    dev: true
 
   /estree-walker/2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
