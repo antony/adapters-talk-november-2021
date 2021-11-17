@@ -1,10 +1,8 @@
-name = "instamail"
-type = "webpack"
-route = ''
-zone_id = ''
-usage_model = ''
+name = "adapters-talk-november-2021"
+type = "javascript"
+
+account_id = "b0f49de09cdd982ac1ad13643446c15f"
 workers_dev = true
-kv_namespaces = [
-  { binding = "EMAILS", id = "99535bb86c544429973bbc62c35883a4" }
-]
-site = {bucket = "adapters-talk-november-2021",entry-point = "workers-site"}
+route = ""
+zone_id = ""
+compatibility_date = "2021-11-17"
