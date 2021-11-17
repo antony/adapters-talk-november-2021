@@ -13,5 +13,8 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-cloudflare-workers": "^1.0.0-next.25"
+  },
+  "volta": {
+    "node": "16.13.0"
   }
 }
