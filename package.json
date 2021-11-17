@@ -10,6 +10,9 @@
     "@sveltejs/kit": "next",
     "svelte": "^3.42.6"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "type": "module",
   "dependencies": {
     "@sveltejs/adapter-cloudflare-workers": "^1.0.0-next.25"
