@@ -1,5 +1,8 @@
 name: Deploy
 
+env:
+  USER: root
+
 on:
   push:
     branches:
@@ -27,5 +30,3 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: '.'
-        env:
-          USER: root
