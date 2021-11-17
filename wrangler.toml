@@ -1,6 +1,8 @@
 name = "adapters-talk-november-2021"
 account_id = "b0f49de09cdd982ac1ad13643446c15f"
 type = "javascript"
+compatibility_date = "2021-11-17"
+site = {bucket = "./build", entry-point = "./workers-site"}
 
 [build]
 # Assume it's already been built. You can make this "npm run build" to ensure a build before publishing
@@ -9,5 +11,3 @@ command = "npm run build"
 [build.upload]
 format = "service-worker"
 
-compatibility_date = "2021-11-17"
-site = {bucket = "./build", entry-point = "./workers-site"}
