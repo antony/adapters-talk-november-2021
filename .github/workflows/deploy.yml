@@ -1,8 +1,5 @@
 name: Deploy
 
-env:
-  USER: root
-
 on:
   push:
     branches:
@@ -25,7 +22,7 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deplpy
+      - name: Deploy
         run: |
           volta install @cloudflare/wrangler@latest
           wrangler publish
