@@ -25,6 +25,7 @@ jobs:
 
       - name: Deploy
         run: |
+          volta install node@16
           volta install @cloudflare/wrangler@latest
           wrangler publish
         env:
