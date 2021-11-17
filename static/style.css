@@ -1,0 +1,173 @@
+@import url('//fonts.googleapis.com/css?family=Lobster|Catamaran|Source+Code+Pro&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Catamaran;
+  font-size: 1.6rem;
+  height: 100vh;
+  width: 100vw;
+}
+
+#svelte {
+  height: 100vh;
+  width: 100vw;
+}
+
+.slideshow {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.slide, .title {
+  height: 100%;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0.2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  mix-blend-mode: difference;
+}
+
+.title, .slide {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Lobster';
+  font-size: 8rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.25rem;
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Lobster';
+  font-size: 5rem;
+  margin: 1rem 0;
+
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+  font-size: 2rem;
+  text-shadow: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 0.4rem 0;
+
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
+}
+
+.slideshow .notes { 
+  display: none;
+}
+
+.slideshow .slide {
+  padding: 4%;
+}
+
+.alt0 {
+  background-color: #FB0048;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.alt1 {
+  background-color: #13E708;
+  color: #303030;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.alt2 {
+  background-color: #FFC300;
+  color: #303030;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.alt3 {
+  color: #fff;
+  background-color: #4d4dff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.alt4 {
+  color: #303030;
+  background-color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+pre {
+  font-family: 'Source Code Pro';
+  text-align: center;
+  background-color: #303030;
+  color: #fff;
+  border: 25px solid #303030;
+  border-top: 4px;
+  margin: 0.4rem 0;
+}
+
+pre > .component-name {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  color: lightskyblue;
+  text-align: right;
+}
+
+.columns {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.columns > div {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a,
+a:visited,
+a:hover {
+  font-family: Catamaran;
+  color: #fff;
+}
+
+.noteshow > *:not(.notes) {
+  display: none;
+}
+
+.notes {
+  font-size: 1.25rem;
+  color: #000;
+}
